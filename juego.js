@@ -1,12 +1,10 @@
-// Crear un array vacío para almacenar los nombres de los amigos
+
 let amigos = [];
 
-// Función para agregar un amigo a la lista
 function agregarAmigo() {
-    // Obtener el valor del campo de texto
+ 
     const inputAmigo = document.getElementById('amigo');
-    const nombre = inputAmigo.value.trim(); // Eliminar espacios innecesarios
-
+    const nombre = inputAmigo.value.trim(); // 
     // Verificar si el campo está vacío
     if (nombre === "") {
         alert("Por favor, ingresa un nombre válido.");
