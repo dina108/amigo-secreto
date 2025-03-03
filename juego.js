@@ -1,11 +1,11 @@
-// Seleccionamos los elementos del HTML
+// Seleccion de los elementos del HTML
 const inputAmigo = document.getElementById('amigo');
 const listaAmigos = document.getElementById('listaAmigos');
 const listaResultados = document.getElementById('resultado'); // Para mostrar el amigo secreto
 const botonAgregar = document.getElementById('botonAgregar');
 let amigos = []; // Lista de nombres
 
-// Agregar amigo al presionar "Enter"
+// Agregar el amigo al presionar "Enter"
 inputAmigo.addEventListener("keydown", (event) => {
     if (event.key === "Enter") agregarAmigo();
 });
@@ -13,7 +13,7 @@ inputAmigo.addEventListener("keydown", (event) => {
 // Agregar amigo al hacer clic en el botón
 botonAgregar.addEventListener("click", agregarAmigo);
 
-// Función para agregar un amigo a la lista
+// Función para agregar amigo a la lista
 function agregarAmigo() {
     let nombre = inputAmigo.value.trim(); // Elimina espacios extra
 
